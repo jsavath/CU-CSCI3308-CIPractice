@@ -19,6 +19,11 @@ typedef struct coord_2d {
 /* Return the distance between two 2D coordinates */
 double coord_2d_dist(const coord_2d_t* a, const coord_2d_t* b);
 
+/*take three 2D coordinates and return a double equal to the
+area of the triangle formed by those coordinate*/
+double coord_2d_area_triangle(const coord_2d_t* a, const coord_2d_t* b, const coord_2d_t* c);
+double coord_2d_area_triangle(const coord_2d_t* a, const coord_2d_t* b, const coord_2d_t* c);
+
 /* Test if two 2D coordinates are equal (e.g. withen 0.01 of each other) */
 bool coord_2d_eq(const coord_2d_t* a, const coord_2d_t* b);
 
